@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+    Apology
+{% endblock %}
+
+{% block content %}
+
+<main class=description>
+    <h1><center><b>ERROR {{ code }}</b></center></h1>
+    <h2><center>{{ message }}</center></h2>
+    <img alt="error_polarbear" src="/static/dead_polar_bear.png" class="center">
+</main>
+
+{% endblock  %}

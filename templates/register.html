@@ -1,0 +1,70 @@
+{% extends "layout.html" %} 
+
+{% block title %} 
+    Register
+{% endblock %} 
+
+{% block main %}
+    
+    <h1 class="registration_h1 white"><center>Sign Up</center></h1>
+    <h2 class="registration_h2 white"><center>Become a member <b>today</b></center></h2>
+    <form action="/register" class="center" method="post">
+        <div class="form-group">
+            <h1>
+                <center>
+                    <tr>
+                        <td>
+                            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+                        </td>
+                    </tr>
+                </center>
+            </h1>
+        </div>
+        <div class="form-group">
+            <input class="form-control" autocomplete="off" name="email" placeholder="E-mail address" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" autocomplete="off" name="password" placeholder="Password" type="password">
+        </div>
+        <div><h2 class="white"><center>Please enter your birthday:</center></h2></div>
+        <div>
+            <p1>
+                <center>
+                    <tr>
+                        <td><input class="form-control" autocomplete="off" name="month" placeholder="Month" type="number" min=1 max=12></td>
+                        <td><input class="form-control" autocomplete="off" name="day" placeholder="Day" type="number" min=1 max=31></td>
+                        <td><input class="form-control" autocomplete="off" name="year" placeholder="Year" type="number"></td>
+                    </tr>
+                </center>
+            </p1> 
+        </div>
+        <div><h2 class="white"><center>What are your pronouns?</center></h2></div>
+        <div>
+            <p2>
+                <center>
+                    <tr>
+                        <td><input type="checkbox" id="they" autocomplete="off"name="pronouns" value="they/them"></td>
+                        <td><label class="white" for="they">They/them</label></td>
+                        <td><input type="checkbox" id="she" autocomplete="off"name="pronouns" value="she/her"></td>
+                        <td><label class="white" for="she">She/her</label></td>
+                        <td><input type="checkbox" id="he" autocomplete="off"name="pronouns" value="he/him"></td>
+                        <td><label class="white" for="he">He/him</label></td>
+                        <td><input type="checkbox" id="other" autocomplete="off" name="pronouns" value="other"></td>
+                        <td><label class="white" for="other">Other</label></td>
+                    </tr>
+                </center>
+            </p2>
+        </div>
+        <h3 class="white"><center>What is your ethnicity?</center></h3>
+        <div>
+            <input class="form-control" autocomplete="off" name="ethnicity" placeholder="Ethnicity" type="text">
+        </div>
+        <h1>
+            <center>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </center>
+        </h1>
+    </form>
+
+{% endblock %}
+

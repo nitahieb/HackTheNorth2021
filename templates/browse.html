@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+    Home page
+{% endblock %}
+
+{% block content %}
+
+{% for title, description in info_list %}
+<div class="box_model">
+    <div class="cell" id="box1"><img src="static/box_background.png" width="200px"><br><a href="fill_form_1"> {{title }} <br> {{description}}</a></div>
+</div>
+{% endfor %}
+
+{% endblock %} 

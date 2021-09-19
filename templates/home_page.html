@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+    Home page
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <h2 class= "featured">Featured</h2>
+</div>
+
+<div class="cell"><img src="/static/box_background.png" alt="box_background" width="300px"><a href="fill_form_1"><br>Mental Health: Experiences Under Covid-19</a></div>
+<div class="cell"><img src="/static/box_background.png" alt="box_background" width="300px"><a href="fill_form_1"><br>Experiences of Women in STEM<a></div>
+<div class="cell"><img src="/static/box_background.png" alt="box_background" width="300px"><a href="fill_form_1"><br>Customer Satisfaction</a></div>
+
+<!-- <div class="searchbar">
+    <input type="text" placeholder="Search for surveys...">
+</div> -->
+
+<div class="description">
+    <h2 class="descriptionHeading">What is Pollar.me?</h2>
+        <p>Pollar.me is a community-curated survey repository that provides its members with a user-friendly way to host, create, and distribute surveys. With Pollar.me, confidentiality and security is at the forefront - by using CockroachDB as the database of choice, all user data is ensured to be private and encrypted by the database and is only accessible by parties who have been given consent by the user.</p>
+</div>
+{% endblock %} 

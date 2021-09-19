@@ -1,0 +1,70 @@
+{% extends "layout.html" %} 
+
+{% block title %} 
+    Register
+{% endblock %} 
+
+{% block main %}
+
+
+
+<form class="center" action="/create_form" method="post">
+
+    <div>
+        <h1>
+            <center>
+                <input class="center" type="text" placeholder="Enter Title Here" name="enter_title">
+            </center>
+        </h1>
+        <p>
+            <center>
+                <input class="center" type="text" placeholder="Describe your survey" name="survey_description">
+            </center>
+        </p>
+    </div><br> 
+
+    <div>
+        <p class="white">Questions - Multiple Choice</p>
+        <p><input type="text" placeholder="Enter question" name="multiple_choice_question"></p>
+        <input type="radio" id ="option 1" name="radio_buttons" value="Option 1">
+        <label for="option 1"><input type="text" placeholder="Option 1" name="radio_option_1"></label><br>
+        <input type="radio" id ="option 2" name="radio_buttons" value="Option 2">
+        <label for="option 2"><input type="text" placeholder="Option 2"name="radio_option_2"></label><br>
+        <input type="radio" id ="option 3" name="radio_buttons" value="Option 3" name="radio_option_3">
+        <label for="option 3"><input type="text" placeholder="Option 3"></label><br>
+    </div><br>
+
+    <div>
+        <p>Questions - Shorts Answers</p>
+        <input type="text" placeholder="Enter question" name="short_answer_question_1"><br>
+        <input type="text" placeholder="Enter question" name="short_answer_question_2"><br>
+    </div><br>
+
+    <div>
+        <p>Questions - Long Answers</p>
+        <input type="text" placeholder="Enter question" name="long_answer_question"><br>
+    </div><br>
+
+    <div>
+        <p>Ratings  - 1-10</p>
+        <input type="text" placeholder="Enter question" name="rating_question"><br>
+        <input type="radio" id="rating 1" name="rating_button" value="Rating 1">
+        <input type="radio" id="rating 2" name="rating_button" value="Rating 2">
+        <input type="radio" id="rating 3" name="rating_button" value="Rating 3">
+        <input type="radio" id="rating 4" name="rating_button" value="Rating 4">
+        <input type="radio" id="rating 5" name="rating_button" value="Rating 5">
+        <input type="radio" id="rating 6" name="rating_button" value="Rating 6">
+        <input type="radio" id="rating 7" name="rating_button" value="Rating 7">
+        <input type="radio" id="rating 8" name="rating_button" value="Rating 8">
+        <input type="radio" id="rating 9" name="rating_button" value="Rating 9">
+        <input type="radio" id="rating 10" name="rating_button" value="Rating 10"><br>
+        <input type="text" id="parameter 1" name="parameter" placeholder="parameter 1">
+        <input type="text" id="parameter 2" name="parameter" placeholder="parameter 2">
+    </div><br>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+
+
+{% endblock %} 

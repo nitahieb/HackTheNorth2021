@@ -1,0 +1,5 @@
+Flask
+Flask-Session
+SQLAlchemy
+psycopg2-binary
+matplotlib

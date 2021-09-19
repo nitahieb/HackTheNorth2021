@@ -1,0 +1,121 @@
+/* 
+main .form-control
+{
+    Center form 
+    display: inline-block; 
+    width: auto;
+}
+*/
+/*
+.center
+{
+   margin-left: auto;
+   margin-right: auto; 
+   display: inline-block;
+}
+*/
+
+input{
+    text-align:center;
+ }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+
+head{
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(180deg, rgba(74,78,105,1) 52%, rgba(34,34,59,1) 100%);
+    min-height: 100%;
+}
+html{
+    min-height: 100%;
+}
+nav{
+    border: 2px solid gray;
+    grid-column: 1 /4;
+    grid-row: 1;
+    height: 50px!important;
+}
+p{
+    color: white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.featured{
+    color: white;
+    margin-left: 35px;
+
+}
+
+.cell{
+    background-color: rgb(220, 220, 220);
+    height: 250px;
+    grid-row: 3;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.searchbar{
+    justify-content: center;
+    display: grid;
+    grid-row: 4;
+    margin-top: 50px;
+    grid-column: 2 / 3;
+}
+
+.white{
+    color: white;
+}
+
+.description{
+    display: grid;
+    grid-row: 5;
+    grid-column: 2 / 3;
+    color: white;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.descriptionHeading{
+    text-align: center!important;
+}
+
+.registration_h1{
+    color: white;
+}
+
+.box_model {
+    width: 500px;
+    padding: 10;
+    margin: 10px;
+}
+
+
+.center-block {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
